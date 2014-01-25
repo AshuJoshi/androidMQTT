@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+      
+ 	<EditTextPreference
+        android:title="MQTT Topic"
+        android:summary="Provide Topic for Pub/Sub"
+        android:key="topic" />      
+    
+      <CheckBoxPreference 
+        android:title="Broker Discovery?"
+        android:summaryOn="Check the box for manual entry"
+        android:summaryOff="Check the box for manual entry"
+        android:key="chkbox_manual_entry" />
+      
+      <com.imsight.androidmqtt.IPAddressPreference
+        android:title="MQTT Broker"
+        android:summary="Enter IP Valid IP Address"
+        android:key="broker"
+        android:dependency="chkbox_manual_entry">
+     </com.imsight.androidmqtt.IPAddressPreference>
+     
+         
+</PreferenceScreen>
