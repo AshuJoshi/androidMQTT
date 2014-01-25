@@ -47,8 +47,8 @@ public class MQTTService extends Service implements MqttSimpleCallback
     /*    CONSTANTS                                                         */
     /************************************************************************/
     
-	private static final String TAG ="IOE Sensors";
-	private final static String RESP_TOPIC = "Ashu";
+	private static final String TAG ="MQTT";
+	private final static String RESP_TOPIC = "Test";
 	
     // something unique to identify your app - used for stuff like accessing
     //   application preferences
